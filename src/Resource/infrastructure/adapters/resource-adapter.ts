@@ -7,7 +7,8 @@ export default class ResourceAdapter implements IAdapter<Resource[]> {
         const array = externalResource.data;
         return array.map(data => new Resource(
             data.id,
-            data.name
+            data.name,
+            data.color,
         ));
     }
 }
